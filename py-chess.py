@@ -1,11 +1,4 @@
 import numpy as np
-########## Xadrez da Ale e do Kayola ##########
-
-#### A estrutura do jogo do xadrez será dividida em: ####
-#### Peça: Menor elemento que conterá os métodos posição (para guardar a própria posição no tabuleiro) ####
-#### Tipos de Peça: Classes que serão uma extensão das peças, herdará seus métodos e terá seus próprios ####
-#### Posição: cada casa do tabuleiro, na questão, serão 64 unidades dessa classe para o jogo, guardando informações como: ####
-#### conteudo: vazio ou peça, disponível: indica se tem peça ou não, capturavel: indica se a posição indica uma captura ####
 
 ###### Definição da classe peças #####
 class IntervaloError(Exception):
@@ -23,7 +16,6 @@ class Peca:
 
 
 ###### Definição das peças do jogo, que extende a classe Peça #####
-
 
 class Rei(Peca):
     def __init__(self, posXPeca, posYPeca, corDaPeca):
